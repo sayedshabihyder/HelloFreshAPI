@@ -39,7 +39,7 @@ public class RequestsForCountries extends BaseTest {
 		ExecutionLog.logGetRequestAndResponse(
 				this.getClass().getName() + " and Test method "
 						+ Thread.currentThread().getStackTrace()[1].getMethodName(),
-				response, GlobalConstant.ALLCOUNTRIES, "GET");
+				response, GlobalConstant.BASEURI + GlobalConstant.ALLCOUNTRIES, "GET");
 
 		ExecutionLog.LogEndClass(this.getClass().getName());
 
@@ -62,7 +62,8 @@ public class RequestsForCountries extends BaseTest {
 		ExecutionLog.logGetRequestAndResponse(
 				this.getClass().getName() + " and Test method "
 						+ Thread.currentThread().getStackTrace()[1].getMethodName(),
-				response, GlobalConstant.SPECIFICCOUNTRY + GlobalConstant.UNITEDSTATES, "GET");
+				response, GlobalConstant.SPECIFICCOUNTRY + GlobalConstant.UNITEDSTATES + GlobalConstant.UNITEDSTATES,
+				"GET");
 
 		ExecutionLog.LogEndClass(this.getClass().getName());
 
@@ -84,7 +85,7 @@ public class RequestsForCountries extends BaseTest {
 		ExecutionLog.logGetRequestAndResponse(
 				this.getClass().getName() + " and Test method "
 						+ Thread.currentThread().getStackTrace()[1].getMethodName(),
-				response, GlobalConstant.SPECIFICCOUNTRY + GlobalConstant.GERMANY, "GET");
+				response, GlobalConstant.BASEURI+GlobalConstant.SPECIFICCOUNTRY + GlobalConstant.GERMANY, "GET");
 
 		ExecutionLog.LogEndClass(this.getClass().getName());
 
@@ -106,7 +107,7 @@ public class RequestsForCountries extends BaseTest {
 		ExecutionLog.logGetRequestAndResponse(
 				this.getClass().getName() + " and Test method "
 						+ Thread.currentThread().getStackTrace()[1].getMethodName(),
-				response, GlobalConstant.SPECIFICCOUNTRY + GlobalConstant.GREATBRITAIN, "GET");
+				response, GlobalConstant.BASEURI+GlobalConstant.SPECIFICCOUNTRY + GlobalConstant.GREATBRITAIN, "GET");
 
 		ExecutionLog.LogEndClass(this.getClass().getName());
 
@@ -128,7 +129,7 @@ public class RequestsForCountries extends BaseTest {
 		ExecutionLog.logGetRequestAndResponse(
 				this.getClass().getName() + " and Test method "
 						+ Thread.currentThread().getStackTrace()[1].getMethodName(),
-				response, GlobalConstant.SPECIFICCOUNTRY + countryCode, "GET");
+				response, GlobalConstant.BASEURI+GlobalConstant.SPECIFICCOUNTRY + countryCode, "GET");
 
 		ExecutionLog.LogEndClass(this.getClass().getName());
 
@@ -148,7 +149,7 @@ public class RequestsForCountries extends BaseTest {
 		ExecutionLog.logGetRequestAndResponse(
 				this.getClass().getName() + " and Test method "
 						+ Thread.currentThread().getStackTrace()[1].getMethodName(),
-				response, GlobalConstant.BASEURI+ "", "POST");
+				response, GlobalConstant.BASEURI + "", "POST");
 
 		ExecutionLog.LogEndClass(this.getClass().getName());
 	}
