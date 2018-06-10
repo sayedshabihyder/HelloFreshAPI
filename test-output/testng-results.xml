@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[
+Send Get Request]]>
+    </line>
+    <line>
+      <![CDATA[
+Validate Response Code]]>
+    </line>
+    <line>
+      <![CDATA[
+validate country code is not in response]]>
+    </line>
+    <line>
+      <![CDATA[
+print request/response contents]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7110" started-at="2018-06-10T13:02:35Z" finished-at="2018-06-10T13:02:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7110" started-at="2018-06-10T13:02:35Z" finished-at="2018-06-10T13:02:42Z">
+      <class name="com.hellofresh.test.RequestsForCountries">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.hellofresh.test.RequestsForCountries@711f39f9]" name="before" is-config="true" duration-ms="416" started-at="2018-06-10T18:32:35Z" finished-at="2018-06-10T18:32:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.hellofresh.test.RequestsForCountries@711f39f9]" name="setUp" is-config="true" duration-ms="12" started-at="2018-06-10T18:32:35Z" finished-at="2018-06-10T18:32:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hellofresh.test.RequestsForCountries.retrieveInExistentCountry() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="retrieveInExistentCountry()[pri:0, instance:com.hellofresh.test.RequestsForCountries@711f39f9]" name="retrieveInExistentCountry" duration-ms="7062" started-at="2018-06-10T18:32:35Z" finished-at="2018-06-10T18:32:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[
+Send Get Request]]>
+            </line>
+            <line>
+              <![CDATA[
+Validate Response Code]]>
+            </line>
+            <line>
+              <![CDATA[
+validate country code is not in response]]>
+            </line>
+            <line>
+              <![CDATA[
+print request/response contents]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- retrieveInExistentCountry -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.hellofresh.test.RequestsForCountries@711f39f9]" name="tearDownSuite" is-config="true" duration-ms="784" started-at="2018-06-10T18:32:42Z" finished-at="2018-06-10T18:32:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.hellofresh.test.RequestsForCountries -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

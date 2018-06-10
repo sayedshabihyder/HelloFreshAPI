@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HelloFreshAPI Requests" verbose="10">
+
+	<listeners>
+		<listener class-name="com.hellofresh.report.ExtentReporterNG" />
+		<listener class-name="com.hellofresh.report.SummaryReport" />
+	</listeners>
+	
+	<test name="CountriesGetRequests">
+		<classes>
+			<class name="com.hellofresh.test.RequestsForCountries">
+				<methods>
+					<include name="retrieveAllCountries" />
+					<include name="retrieveDataForUnitedStates"/>
+					<include name="retrieveDataForGermany"/>
+					<include name="retrieveDataForGreatBritain"/>
+					<include name="retrieveInExistentCountry"/>
+					<include name="addRequiredCountry"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
