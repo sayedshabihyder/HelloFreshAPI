@@ -102,7 +102,7 @@ public class ExecutionLog {
 		}
 	}
 
-	public static void logGetRequestAndResponse(String text, Response response, String uriSubPart, String requestType)
+	public static void logGetRequestAndResponse(String text, Response response, String completeUri, String requestType)
 			throws IOException {
 		ExecutionLog executionLog = new ExecutionLog();
 		String dateTime = executionLog.getDate();
@@ -122,7 +122,7 @@ public class ExecutionLog {
 			out.newLine();
 			out.write("Method:" + requestType);
 			out.newLine();
-			out.write("URI=" + RestAssured.baseURI.toString() + uriSubPart);
+			out.write("URI="+completeUri);
 			out.newLine();
 			out.write("Response Body=" + response.asString());
 			out.newLine();
